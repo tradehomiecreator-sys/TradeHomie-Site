@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TradeHomie — a pre-trade checklist for TradingView</title>
+<meta name="description" content="TradeHomie floats over your TradingView chart with a pre-trade checklist, a position-size calculator, and a private local screenshot journal. It never gives financial advice." />
+<style>
+  :root {
+    --bg: #131722;
+    --panel: #1e222d;
+    --border: #2a2e39;
+    --text: #d1d4dc;
+    --muted: #868993;
+    --accent: #2962ff;
+    --amber: #f0a63b;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  body {
+    padding: 0 16px;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 0 48px;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--amber);
+    background: rgba(240, 166, 59, 0.12);
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-bottom: 18px;
+  }
+  h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 0 0 12px;
+    color: #fff;
+  }
+  .lead {
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--muted);
+    margin: 0 0 32px;
+    max-width: 520px;
+  }
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin: 0 0 40px;
+  }
+  @media (max-width: 560px) {
+    .features { grid-template-columns: 1fr; }
+    h1 { font-size: 28px; }
+  }
+  .feature {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+  }
+  .feature-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 6px;
+  }
+  .feature-desc {
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--muted);
+  }
+  .disclaimer {
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+    padding-top: 24px;
+    margin-top: 8px;
+  }
+  .disclaimer strong {
+    color: var(--text);
+  }
+  footer {
+    margin-top: 32px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  footer a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+  footer a:hover {
+    color: var(--text);
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <span class="badge">For TradingView</span>
+    <h1>Your homie for disciplined trading.</h1>
+    <p class="lead">
+      TradeHomie floats over your TradingView chart and asks the questions
+      you'd ask yourself on a good day — before you click buy or sell, not
+      after.
+    </p>
+
+    <div class="features">
+      <div class="feature">
+        <div class="feature-title">Pre-trade checklist</div>
+        <div class="feature-desc">Your own Entry Rules and Risk Management, plus a locked FOMO/Psychology list you can't quietly edit away.</div>
+      </div>
+      <div class="feature">
+        <div class="feature-title">Position-size calculator</div>
+        <div class="feature-desc">Capital, risk % and live FX rates, worked out for you before you size a trade.</div>
+      </div>
+      <div class="feature">
+        <div class="feature-title">Private local journal</div>
+        <div class="feature-desc">Chart screenshots stay on your device only — never uploaded, ever.</div>
+      </div>
+      <div class="feature">
+        <div class="feature-title">A daily mood check</div>
+        <div class="feature-desc">A quick, awareness-only check-in on how you're feeling before you trade.</div>
+      </div>
+    </div>
+
+    <div class="disclaimer">
+      <strong>TradeHomie doesn't give financial advice.</strong> It helps you
+      stay aware of your own process. Nothing in the extension tells you what
+      to buy, sell, or when — that call is always yours.
+    </div>
+
+    <footer>
+      Questions or support: <a href="mailto:hello@tradehomie.app">hello@tradehomie.app</a>
+    </footer>
+  </div>
+</body>
+</html>
